@@ -51,20 +51,65 @@
 # • If it is between 0 and 100, print that the temperature is in the normal range.[]
 # • If it is 100, print that the temperature is at the boiling point.
 # • If it is above 100, print that the temperature is above the boiling point
-temperature = float(input('Enter your temperature in  celsius: '))
-if temperature < -273.15:
-    print('the temperature is invalid because it is below absolute zero.')
-elif temperature == -273.15:
-    print('that the temperature is absolute 0')
-elif temperature > -273.15 and temperature < 0:
-    print('the temperature is below freezing')
-elif temperature == 0:
-    print('the temperature is at the freezing point')
-elif temperature > 0 and temperature < 100:
-    print('the temperature is in the normal range')
-elif temperature == 100:
-    print('the temperature is at the boiling point.')
-elif temperature > 100:
-    print('the temperature is above the boiling point.')
-else:
-    print('Not a number')
+# temperature = float(input('Enter your temperature in  celsius: '))
+# if temperature < -273.15:
+#     print('the temperature is invalid because it is below absolute zero.')
+# elif temperature == -273.15:
+#     print('that the temperature is absolute 0')
+# elif temperature > -273.15 and temperature < 0:
+#     print('the temperature is below freezing')
+# elif temperature == 0:
+#     print('the temperature is at the freezing point')
+# elif temperature > 0 and temperature < 100:
+#     print('the temperature is in the normal range')
+# elif temperature == 100:
+#     print('the temperature is at the boiling point.')
+# elif temperature > 100:
+#     print('the temperature is above the boiling point.')
+# else:
+#     print('Not a number')
+profile = {'name':"Micheal", 'age':"17", 'class':"SS3"}
+for i in profile:
+    print(i)
+print("############################################")
+for i in profile.keys():
+    print(i)
+print("############################################")
+for i in profile.values():
+    print(i)
+print("############################################")
+for i in profile.items():
+    print(i)
+print("############################################")
+for keys,values in profile.items():
+    print(keys,values)
+print("############################################")
+for key,values in profile.items():
+    print(keys,"==",values)
+count = 4
+while count <= 10:
+    print(count)
+    count+=1
+
+for i in range(0,10):
+    print(i)
+name =["Mustapha","Mazeedah","Samuel","Kehinde"]
+counter = 0
+while counter < len(name):
+    if name[counter] == "Mazeedah":
+        counter +=1
+        continue
+    print(name[counter])
+    counter +=1
+print("The codes are doing the same thing ##################")
+name_to_skip="Mazeedah"
+index = 0
+while index < len(name):
+    current_name= name[index]
+    if current_name == name_to_skip:
+        index +=1
+        continue
+
+    print (current_name)
+
+    index +=1
